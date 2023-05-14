@@ -9,7 +9,6 @@ import socket from "../utils/socket";
 import { ChatContext } from "../context/chat";
 import { axiosinstance } from "../utils/axiosinstance";
 import { toast } from "react-toastify";
-import VideoCall from "@/components/VideoCall";
 
 export default function Home({ allusers }) {
   const { data: session, status } = useSession();
