@@ -1,0 +1,190 @@
+.mainAttchmentContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999999999;
+}
+
+.innerAttachments {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.attachmentsHeader {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeIcon {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.closeIcon svg {
+  color: gray;
+}
+
+.mediaDisplay {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dataViewCard {
+  height: 75%;
+  width: 60%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainAttachmentDatas {
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.inputBx {
+  height: 48px;
+  width: 60%;
+  background: #fff;
+}
+
+.inputBx input {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: gray;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(56, 56, 56, 0.1);
+}
+
+.attachmentsData {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5px;
+}
+
+.singleAttachment {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.2s linear;
+}
+
+.singleAttachment:hover .attachentCloseIcon {
+  opacity: 1;
+  transition: 0.2s linear;
+}
+
+.attachentCloseIcon {
+  position: absolute;
+  transition: 0.2s linear;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  opacity: 0;
+  border-radius: 10%;
+}
+
+.attachentCloseIcon svg {
+  color: #fff !important;
+}
+
+.activeSingleAttchment {
+  border: 3px solid #036bfc;
+  padding: 2px;
+  position: relative;
+}
+
+.singleAttachment svg {
+  color: gray;
+}
+
+.singleAttachment label {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singleAttachment input {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.sendMessageBtn {
+  width: 100%;
+  padding: 0% 5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sendMessageBtn label {
+  height: 60px;
+  width: 60px;
+  background: #036bfc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.sendMessageBtn .sendBadge {
+  padding: 4px 8px;
+  border-radius: 50%;
+  background: #101a20;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.sendMessageBtn label .svgSendIcon {
+  color: #fff;
+  margin-left: 4px;
+  margin-top: 4px;
+}
+
+.imageMainDispaly {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

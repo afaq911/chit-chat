@@ -1,0 +1,72 @@
+.mainVideoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999999999999999;
+}
+
+.innerVideoChatMain {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.videoChatUsers {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #141414;
+}
+
+.VideoUser {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.VideoUser video {
+  width: 100%;
+  height: 100%;
+}
+
+.VideoCHatOptions {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: #fff;
+  transform: translateX(-50%);
+  padding: 10px 10px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px 60px;
+}
+
+.videoChatBtns {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.videoChatBtns:hover {
+  background: rgba(230, 230, 230, 1);
+  transition: 0.2s linear;
+}
+
+.endCall {
+  background: red;
+  color: #fff;
+}
+
+.endCall:hover {
+  background: red;
+}

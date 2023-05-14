@@ -1,0 +1,49 @@
+.skeltonconversation {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s linear;
+  cursor: pointer;
+  padding: 0px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.skeltonImageBx {
+  height: 50px;
+  width: 50px;
+  background: #f0f2f5;
+  border-radius: 50%;
+  animation: skelton 1.2s linear infinite alternate;
+}
+
+.skeltonInfoBx {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+
+.skeltonTextLoading {
+  width: 90%;
+  height: 14px;
+  background-color: #f0f2f5;
+  border-radius: 4px;
+  animation: skelton 1.2s linear infinite alternate;
+}
+
+@keyframes skelton {
+  from {
+    /* background: #f0f2f5; */
+    opacity: 0.2;
+  }
+
+  to {
+    /* background: #f4f4f4; */
+    opacity: 1;
+  }
+}
