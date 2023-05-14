@@ -68,7 +68,7 @@ const Login = () => {
             <div className={styles.login_mobile_input}>
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder="Your Email / Mobile No"
                 onChange={({ target }) =>
                   setValues({ ...values, email: target.value })
                 }
